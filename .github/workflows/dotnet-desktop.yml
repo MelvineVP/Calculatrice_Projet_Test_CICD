@@ -25,9 +25,6 @@ jobs:
     
     - name: Build
       run: dotnet build "Projet_Calculatrice_CICD/Projet_Calculatrice_CICD.sln" --configuration Debug --no-restore
-
-    - name: Vibin
-      run: ls "/home/runner/work/Calculatrice_Projet_Test_CICD/Calculatrice_Projet_Test_CICD/Projet_Test_Calculatrice/bin/Debug/net8.0/"
         
     - name: Run tests
       run: dotnet test "Projet_Calculatrice_CICD/Projet_Calculatrice_CICD.sln" --no-build --verbosity normal
