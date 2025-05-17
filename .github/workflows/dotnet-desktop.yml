@@ -19,5 +19,8 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: '8.0.x'
+    - name: Build
+      run: dotnet build "Projet_Calculatrice_CICD/Projet_Calculatrice_CICD.sln" --configuration Release --no-restore
+        
     - name: Run tests
       run: dotnet test "Projet_Calculatrice_CICD/Projet_Calculatrice_CICD.sln" --no-build --verbosity normal
