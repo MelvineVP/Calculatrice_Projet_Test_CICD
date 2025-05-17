@@ -20,4 +20,4 @@ jobs:
       with:
         dotnet-version: '8.0.x'
     - name: Run tests
-      run: dotnet test "Calculatrice test Ci_CD/Calculatrice test Ci_CD.sln" --no-build --verbosity normal
+      run: dotnet test "Projet_Calculatrice_CICD/Projet_Calculatrice_CICD.sln" --no-build --verbosity normal
